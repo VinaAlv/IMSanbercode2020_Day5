@@ -53,13 +53,12 @@ document.getElementById('listBarang').innerHTML=cetakdata(items);
 
 
 //RELEASE 2
-var cartt = document.querySelectorAll('addCart');
-var keranjang= document.getElementById('cart');
+var cartt = document.querySelectorAll('#addCart')
 
 var angka =0;
 cartt.forEach(function(ev){
     ev.addEventListener('click', function(evt){
-        ev.preventDefault();
+        evt.preventDefault();
         angka +=1;
         console.log(angka)  
     });
