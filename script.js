@@ -54,6 +54,8 @@ document.getElementById('listBarang').innerHTML=cetakdata(items);
 
 //RELEASE 2
 var cartt = document.querySelectorAll('#addCart')
+var tampil =document.querySelector('#cart')
+
 
 var angka =0;
 cartt.forEach(function(ev){
@@ -61,6 +63,7 @@ cartt.forEach(function(ev){
         evt.preventDefault();
         angka +=1;
         console.log(angka)  
+        tampil.innerHTML = `<button class="btn btn-primary" id="cart"><i class="fas fa-shopping-cart"></i>(${angka})</button>`
     });
    
 });
